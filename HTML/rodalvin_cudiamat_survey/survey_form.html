@@ -3,70 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Survey Form</title>
 </head>
 <body>
     <h1>Survey Form</h1>
     <form action="/submit_form" method="POST">
         <div class="per-info">
             <label for="name">Name:</label>
-            <input type="text" id="name" class="name"><br>
+            <input type="text" id="name" class="name">
+
             <label for="email">Email Address:</label>
             <input type="text" id="email" class="email">
         </div>
-        <br>
+
         <div class="satisfaction">
-            <label for="satisfaction"> How satisfied are you with our service?<br>
-                <label>
-                    <input type="radio" name="satisfaction" value="5"> Very Satisfied
-                </label><br>
-                <label>
-                    <input type="radio" name="satisfaction" value="4"> Satisfied
-                </label><br>
-                <label>
-                    <input type="radio" name="satisfaction" value="3"> Neutral
-                </label><br>
-                <label>
-                    <input type="radio" name="satisfaction" value="2"> Dissatisfied
-                </label><br>
-                <label>
-                    <input type="radio" name="satisfaction" value="1"> Very Dissatisfied
-                </label>
+            <p>How satisfied are you with our service?</p>
+            <label>
+                <input type="radio" name="satisfaction" value="5"> Very Satisfied
+            </label>
+            <label>
+                <input type="radio" name="satisfaction" value="4"> Satisfied
+            </label>
+            <label>
+                <input type="radio" name="satisfaction" value="3"> Neutral
+            </label>
+            <label>
+                <input type="radio" name="satisfaction" value="2"> Dissatisfied
+            </label>
+            <label>
+                <input type="radio" name="satisfaction" value="1"> Very Dissatisfied
             </label>
         </div>
-        <br>
+
         <div class="feature">
-            <label for="satisfaction"> What features do you value the most<br>
-                <label>
-                    <input type="checkbox" name="feature" value="5"> Ease of Use
-                </label><br>
-                <label>
-                    <input type="checkbox" name="feature" value="5"> Design
-                </label><br>
-                <label>
-                    <input type="checkbox" name="feature" value="5"> Customer Support
-                </label>
+            <p>What features do you value the most?</p>
+            <label>
+                <input type="checkbox" name="feature" value="5"> Ease of Use
+            </label>
+            <label>
+                <input type="checkbox" name="feature" value="5"> Design
+            </label>
+            <label>
+                <input type="checkbox" name="feature" value="5"> Customer Support
             </label>
         </div>
-        <br>
+
         <div class="describe">
             <label for="describe">What describes you the most?</label>
-                <select id="describe" name="describe">
-                    <option value="student">Student</option>
-                    <option value="professional">Professional</option>
-                    <option value="hobbyist">Hobbyist</option>
-                    <option value="other">Other</option>
-                </select>
+            <select id="describe" name="describe">
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+                <option value="hobbyist">Hobbyist</option>
+                <option value="other">Other</option>
+            </select>
         </div>
-        <br>
+
         <div class="feedback">
-            <label for="feedback">Additional Feedback:</label><br>
-                <textarea id="feedback" name="feedback"></textarea>
+            <label for="feedback">Additional Feedback:</label>
+            <textarea id="feedback" name="feedback"></textarea>
         </div>
-        <br>
+
         <input type="submit" value="Submit">
     </form>
 </body>
 </html>
+
 
 <!--It took me about 30 minutes to finish the task. The lessons on Forms made it easier for me to finish.-->
