@@ -4,78 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="../../CSS/portfolio/style.css">
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="about">
+        <h2 id="about">About Me</h2>
+        <p>Hello! I'm Rod Alvin Cudiamat, a 4th-year Information Technology major in Multimedia student. This portfolio showcases some of my past projects and things about me.</p>
+        <img src="images/IT.jpg" alt="Illustration related to Information Technology">
+    </section>
 
-    <h2 id="about">About Me</h2>
-    <p>Hello! I'm Rod Alvin Cudiamat, a 4th-year Information Technology major in Multimedia student. This portfolio showcases some of my past projects and things about me.</p>
-    <img src="images/IT.jpg" alt="Illustration related to Information Technology">
+    <section class="projects">
+        <h2 id="projects">My Projects</h2>
+        <table>
+            <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>Library Management System</td>
+                <td>A web application using HTML, CSS, PHP, and JavaScript to manage books/authors.</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>Traysicall</td>
+                <td>A web application using HTML, CSS, PHP, and JavaScript for tricycle booking.</td>
+                <td>2023</td>
+            </tr>
+            <tr>
+                <td>Weather App</td>
+                <td>A web app using HTML, CSS, and JavaScript utilizing an API from <a href="https://openweathermap.org/api">OpenWeatherMap</a>.</td>
+                <td>2023</td>
+            </tr>
+        </table>
+    </section>
 
-    <h2 id="projects">My Projects</h2>
-    <table>
-        <tr>
-            <th>Project Name</th>
-            <th>Description</th>
-            <th>Year</th>
-        </tr>
-        <tr>
-            <td>Library Management System</td>
-            <td>A web application using HTML, CSS, PHP, and JavaScript to manage books/authors.</td>
-            <td>2024</td>
-        </tr>
-        <tr>
-            <td>Traysicall</td>
-            <td>A web application using HTML, CSS, PHP, and JavaScript for tricycle booking.</td>
-            <td>2023</td>
-        </tr>
-        <tr>
-            <td>Weather App</td>
-            <td>A web app using HTML, CSS, and JavaScript utilizing an API from <a href="https://openweathermap.org/api">OpenWeatherMap</a>.</td>
-            <td>2023</td>
-        </tr>
-    </table>
+    <section class="contact">
+        <h2 id="contact">Contact Me</h2>
+        <form action="/submit_form" method="POST">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-    <h2 id="contact">Contact Me:</h2>
-    <form action="/submit_form" method="POST">
-        <fieldset>
-            <legend>Personal Information</legend>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
 
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-        </fieldset>
+            <fieldset>
+                <legend>How did you hear about this portfolio?</legend>
+                <label><input type="radio" name="how" value="friend" required> Friend</label>
+                <label><input type="radio" name="how" value="socialMedia"> Social Media</label>
+                <label><input type="radio" name="how" value="searchEngine"> Search Engine</label>
+                <label><input type="radio" name="how" value="other"> Other</label>
+            </fieldset>
 
-        <fieldset>
-            <legend>How did you hear about this portfolio?</legend>
-            <label><input type="radio" name="how" value="friend" required> Friend</label>
-            <label><input type="radio" name="how" value="socialMedia"> Social Media</label>
-            <label><input type="radio" name="how" value="searchEngine"> Search Engine</label>
-            <label><input type="radio" name="how" value="other"> Other</label>
-        </fieldset>
+            <fieldset>
+                <legend>Skills/Interests</legend>
+                <label><input type="checkbox" name="skill" value="webdev"> Web Development</label>
+                <label><input type="checkbox" name="skill" value="design"> Design</label>
+                <label><input type="checkbox" name="skill" value="photography"> Photography</label>
+            </fieldset>
 
-        <fieldset>
-            <legend>Skills/Interests</legend>
-            <label><input type="checkbox" name="skill" value="webdev"> Web Development</label>
-            <label><input type="checkbox" name="skill" value="design"> Design</label>
-            <label><input type="checkbox" name="skill" value="photography"> Photography</label>
-        </fieldset>
+            <fieldset>
+                <legend>Message</legend>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </fieldset>
 
-        <fieldset>
-            <legend>Message</legend>
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-        </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
 
-        <input type="submit" value="Submit">
-    </form>
-
-    <footer><strong>© Rod Alvin Cudiamat 2025</strong></footer>
+    <footer>© Rod Alvin Cudiamat 2025</footer>
 </body>
 </html>
