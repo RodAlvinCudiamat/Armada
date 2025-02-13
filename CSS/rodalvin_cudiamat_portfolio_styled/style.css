@@ -9,9 +9,10 @@ header {
     background-color: #2c3e50;
     font-weight: bold;
     font-size: large;
-    padding: 5px;
+     padding: 5px;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.275);
+    text-align: center;
 }
 
 header h1 {
@@ -20,6 +21,7 @@ header h1 {
     color: #ccc;
     margin: 0;
     text-transform: uppercase;
+    text-align: center;
 }
 
 nav {
@@ -52,7 +54,7 @@ nav ul li a:hover {
     padding: 40px;
     border-radius: 40px; 
     text-align: center;
-    max-width: 1000px;
+    max-width: 1500px;
     margin: 40px auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.275);
 }
@@ -71,7 +73,7 @@ nav ul li a:hover {
 
 .about img {
     width: 100%;
-    max-width: 300px;
+    max-width: 500px;
     border-radius: 8px;
     margin-top: 20px;
 }
@@ -81,7 +83,7 @@ nav ul li a:hover {
     padding: 40px;
     border-radius: 40px;
     text-align: center;
-    max-width: 1000px;
+    max-width: 1500px;
     margin: 40px auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.275);
 }
@@ -127,7 +129,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Hover effect for table rows */
 .projects tr:hover {
     background: #e0f7fa;
     transition: 0.3s ease;

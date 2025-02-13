@@ -4,26 +4,28 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
             <h1>My Portfolio</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="portfolio.html">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <section>
-            <h2 id="about">About Me</h2>
+        
+        <section class="about">
+            <h2>About Me</h2>
             <p>Hello! I'm Rod Alvin Cudiamat, a 4th-year Information Technology major in Multimedia student. This portfolio showcases some of my past projects and things about me.</p>
             <img src="images/IT.jpg" alt="Illustration related to Information Technology">
         </section>
 
-        <section>
+        <section class="projects">
             <h2 id="projects">My Projects</h2>
             <table>
                 <tr>
@@ -49,9 +51,9 @@
             </table>
         </section>
 
-        <section>
+        <section class="contact">
             <h2 id="contact">Contact Me</h2>
-            <form action="/submit_form" method="POST">
+            <form>
                 <fieldset>
                     <legend>Personal Information</legend>
                     <label for="name">Name:</label>
