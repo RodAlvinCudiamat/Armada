@@ -1,0 +1,142 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+    .top-bar {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding: 7px 20px;
+        background-color: blueviolet;
+        color: white;
+    }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            background: white;
+            color: blueviolet;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .search-bar {
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            width: 200px;
+            text-align: center;
+            margin-left: 200px;
+            background-color: rgb(186, 118, 250);
+            border: 2px #ccc;
+        }
+
+    main {
+        text-align: center;
+        background-color: #1a1a1a;
+        color: white;
+        padding: 64px 20px;
+        align-items: center;
+    }
+
+        .main-logo {
+            font-size: 50px;
+            font-weight: bold;
+            background: blueviolet;
+            padding: 15px 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .main-content h1 {
+            font-size: 32px;
+            margin-top: 20px;
+        }
+
+        .main-content p {
+            font-size: 16px;
+            margin-top: 10px;
+            color: #ccc;
+            width: 580px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+            .btn-dark {
+                background: #333;
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .btn-purple {
+                background:blueviolet;
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+        .version {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #aaa;
+        }
+
+            .version a {
+                color: blueviolet;
+                text-decoration: none;
+            }
+
+    .get-started {
+        text-align: center;
+        padding: 25px 20px;
+        background-color: #1a1a1a;
+        color: white;
+    }
+
+        .start-icon {
+            font-size: 24px;
+            padding: 10px;
+            background: blueviolet;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        .get-started h2 {
+            font-size: 26px;
+            margin-top: 15px;
+        }
+
+        .get-started p {
+            font-size: 16px;
+            margin-top: 10px;
+            color: #ccc;
+        }
+
+        .start-link {
+            display: block;
+            margin-top: 15px;
+            color: blueviolet   ;
+            text-decoration: none;
+        }
