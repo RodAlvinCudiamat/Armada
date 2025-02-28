@@ -1,0 +1,299 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    font-family: 'Super Sans', "Basic Commercial", sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #002056;
+    padding: 10px 0px 10px 20px;
+    color: white;
+}
+
+.logo { 
+    width: 170px;
+    margin: 10px 40px 10px 35px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white; 
+    border-radius: 3px;
+    overflow: hidden;
+    width: 800px; 
+}
+
+.search-bar input {
+    padding: 15px;
+    width: 750px;
+    height: 15px;
+    border: none;
+    border-radius: 3px;
+    flex: 1;
+    outline: none;
+}
+
+button{
+    background-color: #F17D21;
+    width: 50px;
+    height: 45px;
+    outline: none;
+    border: none;
+}
+
+button img {
+    width: 30px;
+    height: 30px;
+    align-self: center;
+}
+
+.nav-bar { 
+    padding: 0px 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.cart a{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: left;
+    width: 100px;
+}
+
+.nav-links a span {
+    font-weight: bold;
+}
+
+.nav-links img {
+    width: 30px;
+    height: 30px;
+}
+
+.separator {
+    width: 1px;
+    height: 20px;
+    background-color: white;
+}
+
+.cart-icon {
+    font-size: 24px;
+}
+
+
+.menu {
+    background-color: white;
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    padding: 14px 24px;
+    margin: 0;
+    font-size: 14px;
+}
+
+.menu ul li {
+    margin: 0 10px;
+}
+
+.menu ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    margin-top: 157px;
+}
+
+.categories {
+    text-align: left;
+    padding: 20px;
+    background-color: white;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    list-style: none;
+}
+
+.category {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category img {
+    border-radius: 50%;
+    width: 200px;
+}
+
+.exclusive {
+    padding: 20px;
+    background-color: white;
+    text-align: left;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+}
+
+.product {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.product img {
+    width: 200px;
+}
+
+.sale {
+    color: red;
+    font-weight: bold;
+}
+
+.orig-price {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.more ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+
+.more li {
+    list-style: none;
+    display: flex;
+}
+
+.more p {
+    width: 280px;
+}
+
+.more .title{
+    font-weight: bold;
+}
+
+.more img {
+    max-width: 30px;
+    max-height: 30px;
+    margin: 15px 15px 0px 0px;
+}
+
+footer {
+    background-color: #333232;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .search-bar {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .banner img {
+        margin-top: 120px; 
+    }
+
+    .category-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .category img {
+        width: 80px;
+    }
+
+    
+    .products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .product img {
+        max-width: 180px;
+    }
+
+    .more ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    .more li {
+        width: 30%;
+        text-align: center;
+    }
+
+    .more img {
+        max-width: 40px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+}

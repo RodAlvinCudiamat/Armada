@@ -1,0 +1,344 @@
+/* {
+    border: dotted red 1px;
+}
+    */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+    margin: 0px auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 95%;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.logo {
+    font-size: 30px;
+    color: red;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+#language {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.sign-in {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.welcome {
+    height: 100vh;
+    background: url('netflix_image_asset/PH-en-20250113-TRIFECTA-perspective_8171c01e-c334-403b-bfa2-133bcc962aaf_small.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+}
+
+.welcome-mess {
+    width: 400px;
+    margin: 0 auto 10px;
+    color: white;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.smol {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.686);
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.323);
+    border: white 1px solid;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.get-startedbtn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 3px 10px;
+}
+
+.trending {
+    padding: 35px;
+    text-align: left;
+    margin: 0px 180px;
+}
+
+.carousel {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.carousel img {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.reasons {
+    padding: 35px;
+    text-align: left;
+    color: #ffffff; 
+    font-family: Arial, sans-serif;
+    margin: 0px 180px;
+}
+
+.reason-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.reason {
+    background: #192841;
+    padding: 100px 23px;
+    width: 200px;
+    border-radius: 12px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.reason h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.reason p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+ .start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 30px 0px;
+ }
+
+ @media (max-width: 768px) {
+    header {
+        width: 92%;
+        padding: 15px 0px;
+        margin-left: 30px; 
+    }
+
+    .welcome {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .welcome-mess {
+        width: 90%; 
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    .get-started {
+        width: 90%;
+        text-align: center;
+    }
+
+    .trending {
+        margin: 0 50px; 
+        padding: 20px;
+    }
+
+    .carousel {
+        display: flex;
+        flex-wrap: nowrap; 
+        overflow-x: auto; 
+        scrollbar-width: none; 
+        padding: 20px 10px;
+        gap: 10px;
+    }
+
+    .carousel img {
+        width: 120px; 
+        flex: 0 0 auto;
+    }
+
+    .reasons {
+        margin: 0 50px;
+        padding: 20px;
+    }
+
+    .reason-boxes {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .reason {
+        width: 90%;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .start {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .start p {
+        font-size: 13px;
+    }
+
+    .get-started {  
+        flex-direction: row;
+        width: 80%;
+    }
+}
+
+@media (max-width: 425px) {
+    header {
+        width: 100%;
+        padding: 10px;
+        margin-left: 0; 
+        flex-direction: row ;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .header-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .welcome {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .welcome-mess {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    form {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    input {
+        width: 90%;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .get-startedbtn {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .trending {
+        margin: 0 20px;
+        padding: 10px;
+    }
+
+    .carousel {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none;
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .carousel img {
+        width: 100px; 
+        flex: 0 0 auto;
+    }
+
+    .reasons {
+        margin: 0 20px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .reason-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reason {
+        width: 90%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .start {
+        text-align: center;
+        width: 100%;
+    }
+
+    .start p {
+        font-size: 12px;
+    }
+
+    .get-started {
+        flex-direction: column;
+        width: 100%;
+    }
+}
